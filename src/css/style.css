@@ -1,0 +1,173 @@
+.red_text {
+    color:rgb(233, 16, 8)
+}
+.first_gamer {
+    color: #e905059f;
+    font-weight: bold;
+}
+.second_gamer {
+    color: #122fcfab;
+    font-weight: bold;
+}
+@font-face {
+    font-family: majestic-x;
+    src: url(/src/fonts/majestic-x.ttf);
+}
+h1,h2,h3 {
+    font-family: majestic-x;
+    color: #020203;
+}
+h1 {
+    display: block;
+    font-size: 4em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    margin-right: 0;
+    font-weight: bold;
+    background-repeat: no-repeat;
+        color: rgb(39, 23, 20);
+    }
+h2 {
+    display: block;
+    font-size: 2.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    margin-left: 2em;
+    margin-right: -0.19em;
+    font-weight: normal;
+    color: rgb(8, 8, 8);
+    text-align: left;
+        }
+h3{ 
+    display: block;
+    font-size: 2.3em;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: normal;
+    width:250px;
+    height:50px;
+    background-color: #fff;
+    border-style: solid;
+}
+body {
+    background-image: url(/src/img/160104-novyj_god-rozhdestvo-santa_klaus-ded_moroz-santa_klaus_smeshnoj-3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+} 
+.gif_b,.gif_a {
+    float:right; margin: -55px 80px 0px 200px
+    width:500px;
+    height:150px;
+    background-color: #fff;
+    border-style: solid;
+}
+.gif_c {
+    float:right; margin: 0px 80px 0px 200px
+    width:500px;
+    height:150px;
+    background-color: #fff;
+    border-style: solid;
+}
+ul {
+    margin-top: 0em;
+    margin-bottom: 5em;
+    list-style-image: url("/src/icons/198570e7d9b27561021df8e6ad0114c7\ \(1\).gif");
+}
+.block_a {
+    width:500px;
+    height:95px;
+    background-color: #fff;
+    border-style: solid;
+    }
+.block_b {
+        width:500px;
+        height:80px;
+        background-color: #fff;
+        border-style: solid;
+                }
+.block_c {
+            width:500px;
+            height:170px;
+            background-color: #fff;
+            border-style: solid;
+            }
+  /*настраиваем отступы в полях ввода цифр, там, где задаётся время тренировки, отдыха, и количество повторов*/
+  .app_form_block input[type="number"] {
+    padding: 4px 4px;
+  }
+
+  /*задаём отступы у элементов*/
+  .app_main .block_row {
+    padding: 1em 0.5em;
+  }
+
+  /*устанавливаем размер цифр времени тренировки, отдыха, и количества повторов */
+  .app_timer .app_console .timer_panel_info {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
+
+  /*зелёный цвет*/
+  .green {
+    color: #45d3f7;
+  }
+
+  /*красный цвет*/
+  .red {
+    color: #e255cb;
+  }
+
+  /*задаём размер таймера*/
+  .app_timer .app_console .timer_panel_nums {
+    font-size: 4.8em;
+    line-height: 1.2em;
+    margin-top: 50px;
+  }
+
+  /*учим браузер скрывать временно ненужные кнопки*/
+  .app_timer .timer_btn.hide,
+  .app_timer .timer_nums.hide,
+  .app_timer .timer_sep.hide {
+    display: none;
+  }
+
+  /*задаём размер кнопок*/
+  .app_timer .timer_btn {
+    border-color: #000000;
+    color: #ec0e06;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.8em;
+    padding: 8px 12px;
+    margin: 0 2px;
+    min-width: 180px;
+  }
+
+  /*настраиваем, как изменится цвет кнопки, если провести по ней мышкой*/
+  .app_timer .timer_btn:hover {
+    background-color: #000000;
+    color: #ec0e06;
+  }
+
+  /*задаём размер кнопок*/
+  .app_timer .timer_btn.run,
+  .app_timer .timer_btn.pause {
+    border-color: #000000;
+    color: #ec0e06;
+    font-weight: 600;
+  }
+
+  /*настраиваем, как изменится цвет АКТИВНОЙ кнопки, если провести по ней мышкой*/
+  .app_timer .timer_btn.run:hover,
+  .app_timer .timer_btn.pause:hover {
+    background-color: #0d0e0f;
+    color: rgb(233, 9, 9);
+  }
+  .app_form_block {
+    text-align: center
+  }

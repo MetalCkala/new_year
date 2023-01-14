@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игры на Новый 2023 год!!!</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      href="http://s1.iconbird.com/ico/2013/11/502/w256h3561385311558Ball.png"
+    />
+    <!-- подключаем фреймворк jQuery -->
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+      type="text/javascript"
+      defer
+    ></script>
+  </head>
+  <body>
+    <h1>
+      <span class="red_text">Н</span>овогодние игры
+      <span class="red_text">2023</span>!!!
+    </h1>
+    <h2>Для Алёнки и Виктора Васильевича!</h2>
+    <h3>Рисование вслепую:</h3>
+    <p>
+      <img
+        src="https://cdn-images-1.medium.com/max/856/1*xCxAV3x5iHhPNnJpjC6tuA.gif"
+        alt="рисовать_с_закрытыми_глазами"
+        class="gif_a"
+        width="200"
+        height="150"
+      />
+    </p>
+    <div class="block_a">
+      <ul>
+        <li>
+          <span class="first_gamer">1 игрок</span> достает слово, не показывая
+          другому.
+        </li>
+        <li>
+          <span class="first_gamer">1 игрок</span> закрывает себе глаза, рисует.
+        </li>
+        <li>
+          После <span class="second_gamer">2 игрок</span> отгадывает
+          <b>(в течение 1 минуты).</b><br />
+          <span class="first_gamer">1 игрок</span> в течение отгадывания может
+          говорить только: <u><i>да</i></u> или <u><i>нет</i></u
+          >.
+        </li>
+      </ul>
+    </div>
+
+    <h3>Крокодил:</h3>
+    <p>
+      <img
+        src="https://ne-kurim.ru/forum/attachments/tenor-gif.1370036/"
+        alt="крокодил"
+        class="gif_b"
+        width="200"
+        height="150"
+      />
+    </p>
+    <div class="block_b">
+      <ul>
+        <li>
+          <span class="first_gamer">1 игрок</span> достает слово, не показывая
+          другому.
+        </li>
+        <li>
+          <span class="first_gamer">1 игрок</span> показывает с помощью жестов,
+          мимики, танцев, <u>не произнеся не слово</u>.
+        </li>
+        <li>
+          Параллельно <span class="second_gamer">2 игрок</span> отгадывает
+          <b>(в течение 2 минут).</b>
+        </li>
+      </ul>
+    </div>
+
+    <h3>Угадай, кто ты:</h3>
+    <p>
+      <img
+        src="https://i.gifer.com/embedded/download/4vwQ.gif"
+        alt="кто_ты"
+        class="gif_c"
+        width="200"
+        height="150"
+      />
+    </p>
+    <div class="block_c">
+      <ul>
+        <li>Каждый игрок достает слово, не показывая другому.</li>
+        <li>Каждый игрок приклеивает это слово другому игроку на лоб.</li>
+        <li>
+          Игроки по очереди задают вопросы, на которые можно ответить только:
+          <u><i>да</i></u> или <u><i>нет</i></u
+          >. <br />
+          Если ответ <u><i>да</i></u
+          >, то задающий продолжает вопрос. <br />
+          Вместо вопроса можно попробовать отгадать слово, <b>НО</b>, если ответ
+          будет неверным, ход передается другому. <br />
+          <p>Кто первый отгадал, тот и <b>выиграл!</b></p>
+        </li>
+      </ul>
+    </div>
+    <!-- делаем общий блок, где будет наш таймер, и применяем к нему общие стили -->
+    <div class="app_form_block app_main app_timer">
+      <!-- подключаем звуковые уведомления -->
+      <audio id="audio_beep">
+        <source src="s.mp3" type="audio/mp3" />
+      </audio>
+
+      <!-- делаем форму на сайте, где будем выводить наши элементы -->
+      <form name="timer_form" id="timer_form">
+        <!-- основной блок с цифрами -->
+        <div class="block_row app_console">
+          <!-- панель, где мы задаём время тренировки, количество повторов и время перерыва -->
+          <div class="timer_panel_info">
+            <!-- блок, который отвечает за время тренировки -->
+            <span class="timer_interval_work">
+              <!-- по умолчанию ставим время одного подхода 1 минута… -->
+              <span
+                class="timer_interval_nums minutes green"
+                contenteditable="true"
+                >01
+              </span>
+              <!-- разделитель — двоеточие -->
+              <span class="timer_sep">: </span>
+
+              <!-- …и 00 секунд -->
+              <span
+                class="timer_interval_nums seconds green"
+                contenteditable="true"
+                >00
+              </span>
+            </span>
+
+            <!-- блок, который отвечает за количество подходов -->
+            <span class="timer_interval_count">
+              <!-- какой сейчас идёт подход -->
+              <span class="timer_interval_nums times">1 </span>
+
+              <!-- разделитель — косая черта -->
+              <span class="timer_sep">/ </span>
+
+              <!-- и сколько подходов у нас всего -->
+              <span class="timer_interval_nums all_times" contenteditable="true"
+                >2
+              </span>
+            </span>
+
+            <!-- блок, который отвечает за время отдыха -->
+            <span class="timer_interval_rest">
+              <!-- по умолчанию ставим время отдыха 0 минут… -->
+              <span
+                class="timer_interval_nums minutes red"
+                contenteditable="true"
+                >00
+              </span>
+
+              <!-- разделитель — двоеточие -->
+              <span class="timer_sep">: </span>
+
+              <!-- …и 0 секунд -->
+              <span
+                class="timer_interval_nums seconds red"
+                contenteditable="true"
+                >0
+              </span>
+            </span>
+
+            <!-- закончилась панель настроек -->
+          </div>
+
+          <!-- большая цифровая панель -->
+          <div class="timer_panel_nums">
+            <!-- минуты… -->
+            <span class="timer_nums minutes">00</span>
+            <span>:</span>
+
+            <!-- …и секунды -->
+            <span class="timer_nums seconds">00</span>
+          </div>
+
+          <!-- закончился основной блок с числами -->
+        </div>
+
+        <!-- блок кнопок -->
+        <div class="block_row">
+          <!-- Кнопка «Сброс» -->
+          <input
+            value="Сброс"
+            name="timer_clear"
+            id="timer_clear"
+            class="timer_btn"
+            type="button"
+          />
+
+          <!-- Кнопка Старт -->
+          <input
+            value="Старт"
+            name="timer_run"
+            id="timer_run"
+            class="timer_btn run"
+            type="button"
+          />
+
+          <!-- Кнопка «Пауза», в самом начале она скрыта -->
+          <input
+            value="Пауза"
+            name="timer_pause"
+            id="timer_pause"
+            class="timer_btn pause hide"
+            type="button"
+          />
+
+          <!-- закончился блок кнопок -->
+        </div>
+
+        <!-- закончилась форма -->
+      </form>
+
+      <!-- закончился общий блок -->
+    </div>
+
+    <!-- подключаем наш код, который отвечает за правильную работу таймера -->
+    <script
+      type="text/javascript"
+      src="/src/js/interval_timer_script.js"
+      defer
+    ></script>
+  </body>
+</html>
