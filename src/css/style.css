@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: majestic-x;
-    src: url(./src/fonts/majestic-x.ttf);
+    src: url(/src/fonts/majestic-x.ttf);
 }
 h1,h2,h3 {
     font-family: majestic-x;
@@ -53,7 +53,7 @@ h3{
     border-style: solid;
 }
 body {
-    background-image: url(./src/img/160104-novyj_god-rozhdestvo-santa_klaus-ded_moroz-santa_klaus_smeshnoj-3840x2160.jpg);
+    background-image: url(/src/img/160104-novyj_god-rozhdestvo-santa_klaus-ded_moroz-santa_klaus_smeshnoj-3840x2160.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -75,7 +75,7 @@ body {
 ul {
     margin-top: 0em;
     margin-bottom: 5em;
-    list-style-image: url("./src/icons/198570e7d9b27561021df8e6ad0114c7\ \(1\).gif");
+    list-style-image: url("/src/icons/198570e7d9b27561021df8e6ad0114c7\ \(1\).gif");
 }
 .block_a {
     width:500px;
