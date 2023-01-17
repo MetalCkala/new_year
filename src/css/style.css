@@ -47,8 +47,8 @@ h3{
     margin-left: 0;
     margin-right: 0;
     font-weight: normal;
-    width:250px;
-    height:50px;
+    width: 250px;
+    height: 50px;
     background-color: #fff;
     border-style: solid;
 }
@@ -60,15 +60,15 @@ body {
 } 
 .gif_b,.gif_a {
     float:right; margin: -55px 80px 0px 200px
-    width:500px;
-    height:150px;
+    width: 500px;
+    height: 150px;
     background-color: #fff;
     border-style: solid;
 }
 .gif_c {
     float:right; margin: 0px 80px 0px 200px
-    width:500px;
-    height:150px;
+    width: 500px;
+    height: 150px;
     background-color: #fff;
     border-style: solid;
 }
@@ -78,20 +78,20 @@ ul {
     list-style-image: url("./src/icons/198570e7d9b27561021df8e6ad0114c7\ \(1\).gif");
 }
 .block_a {
-    width:500px;
-    height:95px;
+    width: 500px;
+    height: 95px;
     background-color: #fff;
     border-style: solid;
     }
 .block_b {
-        width:500px;
-        height:80px;
+        width: 500px;
+        height: 80px;
         background-color: #fff;
         border-style: solid;
                 }
 .block_c {
-            width:500px;
-            height:170px;
+            width: 500px;
+            height: 170px;
             background-color: #fff;
             border-style: solid;
             }
