@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: majestic-x;
-    src: url("/src/fonts/majestic-x.ttf");
+    src: url("../fonts/majestic-x.ttf");
 }
 h1,h2,h3 {
     font-family: majestic-x;
@@ -75,7 +75,7 @@ body {
 ul {
     margin-top: 0em;
     margin-bottom: 5em;
-    list-style-image: url("/src/icons/198570e7d9b27561021df8e6ad0114c7\ \(1\).gif");
+    list-style-image: url("../icons/198570e7d9b27561021df8e6ad0114c7\ \(1\).gif");
 }
 .block_a {
     width:500px;
